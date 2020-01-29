@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Mobi_frontend</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
             font-size: 28px;
             /* Increased text to enable scrolling */
             padding: 0px 10px;
-            background-color: #111111;
+            background-color:  #f7f7f7;
         }
         
         
@@ -78,50 +78,41 @@
 <body>
 
     <div class="sidenav">
+        </br></br></br></br></br></br>
+        <a href="addcustomer.html">Add customer</a></br></br></br>
         <form method="GET" action="http://dev.mobivat.com:8080/vsdc_module/mobivat/api/product/productId?">
-            <input type="text" name="upc" size="40" maxlength="256" placeholder="enter upc" class="form-control">
-            <input type="submit" name="search_button" value="Search Product" class="btn btn-success mt-2">
-        </form>
-        <a href="addcustomer.html">Add customer</a>
+          <input type="text" name="upc" size="40" maxlength="256" placeholder="enter upc" class="form-control">
+          <input type="submit" name="search_button" value="Search Product" class="btn btn-success mt-2">
+      </form>
         
     </div>
     <header class="navbar1 navbar-fixed-top navbar-inverse">
-      <!-- Footer Links -->
+      
       <div class="container text-center text-md-left">
         
           
-        <!-- Grid row -->
+     
       </div>
-      <!-- Footer Links -->
-      <!-- Copyright -->
+      
       <div class="footer-copyright text-right py-3">
-        <a href="customers.html">Customers</a>
-        <a href="signup.html">Sign Up</a>
-        <a href="login.html">Login</a>
-        <a href="logout.html">Logout</a>
+        <button type="button" class="btn btn-dark"><a href="customers.html">Customers</a></button>
+        <button type="button" class="btn btn-dark"><a href="signup.html">Sign Up</a></button>
+        <button type="button" class="btn btn-dark"><a href="login.html">Login</a></button>
+        <button type="button" class="btn btn-dark"><a href="logout.html">Logout</a></button>
       </div>
-      <!-- Copyright -->
+   
     </header>
 
     <div class="main">
         <img src="customer.jpg" width="102%" position: "fixed">
     </div>
     <header class="navbar navbar-fixed-bottom navbar-inverse">
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-        
-          
-        <!-- Grid row -->
-      </div>
-      <!-- Footer Links -->
-      <!-- Copyright -->
+      
       <div class="footer-copyright text-center py-3">© 2019 Copyright:
          mobi..app &nbsp;&nbsp;&nbsp;&nbsp; All Right Reserved
       </div>
-      <!-- Copyright -->
+     
     </header>
-
-
 
 </body>
 
