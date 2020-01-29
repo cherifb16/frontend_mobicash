@@ -6,6 +6,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
     <script type="text/javascript">
         $(document).ready(function() {
             var customer = {};
@@ -29,29 +31,48 @@
             })
         });
     </script>
+    <style>
+    
+        .card{
+            margin-left: 160px;
+                /* Same as the width of the sidenav */
+                font-size: 28px;
+                /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+    </style>
 </head>
 
-<body>
-    <table border="1" style="border-collapse:collapse" class="table">
-        <tr>
-            <td>Name</td>
-            <td><input id="name" type="text" /></td>
-        </tr>
-        <tr>
-            <td>Phone</td>
-            <td><input id="phone" type="text" /></td>
-        </tr>
-        <tr>
-            <td>Address</td>
-            <td><input id="address" type="text" /></td>
-        </tr>
+<body style="background-image: linear-gradient(to right, #3a6186, #89253e);">
+    <h1 class="card text-center"><strong>New Customer</strong></h1></br></br></br>
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+    
+        <form class="px-4 py-3">
+        <div class="form-group">
+            <label for="exampleDropdownFormEmail1">Name<label>
+            <input input id="name" type="text"class="form-control"placeholder="customer name" />
+        </div>  
+        <div class="form-group">
+            <label for="exampleDropdownFormEmail1">Telephone</label>
+            <input input id="phone" type="text"class="form-control" placeholder="telephone" />
+        </div>
+        <div class="form-group">
+            <label for="exampleDropdownFormEmail1">Address</label>
+            <input id="address" type="text" class="form-control"placeholder="address" />
+        </div>    
 
-        <tr>
-            <td colspan="2">
-                <input type="button" id="btnAddCustomer" value="Add Customer" />
-            </td>
-        </tr>
-    </table>
+          
+          <button type="button" id="btnAddCustomer" value="Add Customer" >Add Customer</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">here we go!</a>
+        
+      </div>
+    </div>
+</div>
+    
 </body>
 
 </html>
