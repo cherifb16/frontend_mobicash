@@ -11,36 +11,115 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
-            
+            font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #001f3f;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+        .navbar {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+            background-color: #111111;
+        }
+        .navbar1 {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+            background-color: #111111;
+        }
+        
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div class="nav justify-content-end">
-        
-        </form>
-        <li class="nav-item">
-        <a href="addcustomer.html">Add customer</a></li>
-        <li class="nav-item">
-        <a href="customers.html">All Customers</a></li>
-        <li class="nav-item">
-        <a href="signup.html">Sign Up</a></li>
-        <li class="nav-item">
-        <a href="login.html">Login</a></li>
-        <li class="nav-item">
-        <a href="logout.html">Logout</a></li>
-</div>
-<div class="nav justify-content-center">
-    <form method="GET" action="http://dev.mobivat.com:8080/vsdc_module/mobivat/api/product/productId?">
+    <div class="sidenav">
+        <form method="GET" action="http://dev.mobivat.com:8080/vsdc_module/mobivat/api/product/productId?">
             <input type="text" name="upc" size="40" maxlength="256" placeholder="enter upc" class="form-control">
             <input type="submit" name="search_button" value="Search Product" class="btn btn-success mt-2">
+        </form>
+        <a href="addcustomer.html">Add customer</a>
+        
     </div>
+    <header class="navbar1 navbar-fixed-top navbar-inverse">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        
+          
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-right py-3">
+        <a href="customers.html">Customers</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="logout.html">Logout</a>
+      </div>
+      <!-- Copyright -->
+    </header>
 
     <div class="main">
         <img src="customer.jpg" width="102%" position: "fixed">
     </div>
+    <header class="navbar navbar-fixed-bottom navbar-inverse">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        
+          
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+         mobi..app &nbsp;&nbsp;&nbsp;&nbsp; All Right Reserved
+      </div>
+      <!-- Copyright -->
+    </header>
 
 
 
